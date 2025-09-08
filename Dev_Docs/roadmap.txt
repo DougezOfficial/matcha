@@ -1,0 +1,26 @@
+verze 1.21
+
+PROCES VÝROBY
+
+1) Semínka mitragyny speciosy (loot table, biome, Merchant, vesničan(nápady na získání)
+
+2) Místo na zasazení (savana, speciální biome (nápady))
+
+3) Sklizeň pomocí nůžek (listy a šance na semínka(50% šance na jinou texturu se semínkama --) ostříhání = semínka)), a pomocí ruky (sticks)
+
+3b) do budoucna zkusit implementovat sklizeň skrz ally logiku
+
+4) Možnosti přípravy (fermentace (gold), venkovní sušení (red), vnitřní sušení v sušírně (green, white)...pro zlatou verzi po fermentaci sušení v sušírně + 
+
+5) Mělnění pomocí:
+
+a) Hmoždíře (pomalý, malá efektivita, ale nenáročná výroba)(MULTIBLOCK)
+b) Ruční mlínek (Rychlejší výroba, větší efektivita, náročnější crafting)(MULTIBLOCK)
+c) Kamenný mlýn (Postavený v budově, rychlý proces mělnění, ale náročný crafting)(MULTIBLOCK)
+d) Kulový mlýn (Nejlepší mlýn, nejlepší výsledky)
+
+6) Prosetí skrze síto:
+
+křemen, iron, diamond
+
+7) Balení do balíčků
