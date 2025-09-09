@@ -21,7 +21,7 @@ public class ModItems {
     public static void registerModItems() {
         MatchaMod.LOGGER.info("Registering Mod Items for " + MatchaMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(KRATOM_SEEDS);
         });
     }
