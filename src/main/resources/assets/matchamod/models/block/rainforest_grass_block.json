@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "matchamod:block/rainforest_grass_block_top",
+    "bottom": "minecraft:block/dirt",
+    "side": "matchamod:block/rainforest_grass_block_side"
+  }
+}

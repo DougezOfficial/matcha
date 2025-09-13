@@ -5,19 +5,19 @@ PROCES VÝROBY
 1) Semínka mitragyny speciosy (loot table, biome, Merchant, vesničan(nápady na získání)
 
 2) Místo na zasazení (savana, speciální biome (nápady))
+    -Rainforest biome, special grass block
 
-3) Sklizeň pomocí nůžek (listy a šance na semínka(50% šance na jinou texturu se semínkama --) ostříhání = semínka)), a pomocí ruky (sticks)
+3) Sklizeň pomocí nůžek (listy a šance na semínka(50% šance na jinou texturu se semínkama --) ostříhání = semínka)), a pomocí ruky (sticks) ~~~UPRAVIT~~~
 
-3b) do budoucna zkusit implementovat sklizeň skrz ally logiku
+3b) do budoucna zkusit implementovat sklizeň skrz ally/copper golem logiku nebo skrz logiku Villagera
 
 4) Možnosti přípravy (fermentace (gold), venkovní sušení (red), vnitřní sušení v sušírně (green, white)...pro zlatou verzi po fermentaci sušení v sušírně + 
 
 5) Mělnění pomocí:
 
-a) Hmoždíře (pomalý, malá efektivita, ale nenáročná výroba)(MULTIBLOCK)
-b) Ruční mlínek (Rychlejší výroba, větší efektivita, náročnější crafting)(MULTIBLOCK)
+a) Hmoždíře (pomalý, malá efektivita, ale nenáročná výroba)(Item na crafting) -> sušený kratom + hmoždíř = prášek(-1 durability)
+b) Ruční mlínek (Rychlejší výroba, větší efektivita, náročnější crafting)(Single-block)
 c) Kamenný mlýn (Postavený v budově, rychlý proces mělnění, ale náročný crafting)(MULTIBLOCK)
-d) Kulový mlýn (Nejlepší mlýn, nejlepší výsledky)
 
 6) Prosetí skrze síto:
 

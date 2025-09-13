@@ -1,4 +1,10 @@
 {
   "item.matchamod.kratom_seeds": "Kratom Seeds",
-  "item.matchamod.kratom_leaf": "Kratom Leaf"
+  "item.matchamod.kratom_leaf": "Kratom Leaf",
+
+  "block.matchamod.rainforest_grass_block": "Rainforest Grass Block",
+  "block.matchamod.bog_grass_block": "Bog Grass Block",
+
+  "itemgroup.matchamod.matcha_mod_blocks": "Matcha Mod Blocks",
+  "itemgroup.matchamod.matcha_mod_items": "Matcha Mod Items"
 }

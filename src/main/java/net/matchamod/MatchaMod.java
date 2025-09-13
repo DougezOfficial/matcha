@@ -3,6 +3,7 @@ package net.matchamod;
 import net.fabricmc.api.ModInitializer;
 
 import net.matchamod.block.ModBlocks;
+import net.matchamod.item.ModItemGroups;
 import net.matchamod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ public class MatchaMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.registerModItems();
+        ModItemGroups.registerItemGroups();
         ModBlocks.registerModBlocks();
     }
 

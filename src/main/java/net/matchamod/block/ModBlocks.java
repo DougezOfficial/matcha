@@ -14,9 +14,13 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block NIGGER_TEST_BLOCK = registerBlock("nigger_test_block",
+    public static final Block RAINFOREST_GRASS_BLOCK = registerBlock("rainforest_grass_block",
             new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+                    .requiresTool().sounds(BlockSoundGroup.GRASS)));
+
+    public static final Block BOG_GRASS_BLOCK = registerBlock("bog_grass_block",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.GRASS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -31,8 +35,9 @@ public class ModBlocks {
     public static void registerModBlocks(){
         MatchaMod.LOGGER.info("Registering block entities for " + MatchaMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.NIGGER_TEST_BLOCK);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(ModBlocks.RAINFOREST_GRASS_BLOCK);
+            entries.add(ModBlocks.BOG_GRASS_BLOCK);
         });
     }
 }

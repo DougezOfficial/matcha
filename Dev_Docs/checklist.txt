@@ -1,0 +1,8 @@
+Kratom_seeds: OK
+Kratom_leaf: OK
+Rainforest_grass_block: CHYBÍ TEXTURA SPODKU, UDĚLAT REVIEW TEXTURY
+Bog_grass_block: CHYBÍ TEXTURA, JINAK OK
+Item_item_group: OK
+Block_item_group: OK
+
+
