@@ -15,11 +15,11 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block RAINFOREST_GRASS_BLOCK = registerBlock("rainforest_grass_block",
-            new Block(AbstractBlock.Settings.create().strength(1f)
+            new Block(AbstractBlock.Settings.create().strength(0.11F)
                     .requiresTool().sounds(BlockSoundGroup.GRASS)));
 
     public static final Block BOG_GRASS_BLOCK = registerBlock("bog_grass_block",
-            new Block(AbstractBlock.Settings.create().strength(1f)
+            new Block(AbstractBlock.Settings.create().strength(0.11f)
                     .requiresTool().sounds(BlockSoundGroup.GRASS)));
 
     private static Block registerBlock(String name, Block block) {
