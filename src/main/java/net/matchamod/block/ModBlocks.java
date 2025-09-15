@@ -15,11 +15,11 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block RAINFOREST_GRASS_BLOCK = registerBlock("rainforest_grass_block",
-            new Block(AbstractBlock.Settings.create().strength(4f)
+            new Block(AbstractBlock.Settings.create().strength(1f)
                     .requiresTool().sounds(BlockSoundGroup.GRASS)));
 
     public static final Block BOG_GRASS_BLOCK = registerBlock("bog_grass_block",
-            new Block(AbstractBlock.Settings.create().strength(4f)
+            new Block(AbstractBlock.Settings.create().strength(1f)
                     .requiresTool().sounds(BlockSoundGroup.GRASS)));
 
     private static Block registerBlock(String name, Block block) {
@@ -33,7 +33,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks(){
-        MatchaMod.LOGGER.info("Registering block entities for " + MatchaMod.MOD_ID);
+        MatchaMod.LOGGER.info("Registering Block Entities for " + MatchaMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(ModBlocks.RAINFOREST_GRASS_BLOCK);
