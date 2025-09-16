@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "top": "matchamod:block/rainforest_grass_block_top",
-    "bottom": "minecraft:block/dirt",
+    "bottom": "matchamod:block/rainforest_grass_block_bottom",
     "side": "matchamod:block/rainforest_grass_block_side"
   }
 }
