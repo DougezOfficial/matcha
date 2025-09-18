@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final Item KRATOM_SEEDS = registerItem("kratom_seeds", new Item(new Item.Settings()));
     public static final Item KRATOM_LEAF = registerItem("kratom_leaf", new Item(new Item.Settings()));
+    public static final Item BLOOD_HIBISCUS = registerItem("blood_hibiscus", new Item(new Item.Settings()));
+    public static final Item DRIED_BLOOD_HIBISCUS = registerItem("dried_blood_hibiscus", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MatchaMod.MOD_ID, name), item);
@@ -25,6 +27,8 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(KRATOM_SEEDS);
             entries.add(KRATOM_LEAF);
+            entries.add(BLOOD_HIBISCUS);
+            entries.add(DRIED_BLOOD_HIBISCUS);
         });
     }
 }

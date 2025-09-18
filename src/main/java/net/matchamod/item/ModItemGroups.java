@@ -30,6 +30,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.KRATOM_LEAF);
                         entries.add(ModItems.KRATOM_SEEDS);
+                        entries.add(ModItems.BLOOD_HIBISCUS);
+                        entries.add(ModItems.DRIED_BLOOD_HIBISCUS);
 
                     }).build());
 
