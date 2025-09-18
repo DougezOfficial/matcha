@@ -1,9 +1,13 @@
 package net.matchamod.block;
 
+import net.fabricmc.fabric.api.block.v1.FabricBlock;
+import net.fabricmc.fabric.api.block.v1.FabricBlockState;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.matchamod.MatchaMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -14,13 +18,15 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block RAINFOREST_GRASS_BLOCK = registerBlock("rainforest_grass_block",
-            new Block(AbstractBlock.Settings.create().strength(0.11F)
-                    .requiresTool().sounds(BlockSoundGroup.GRASS)));
+    public static final Block RAINFOREST_GRASS_BLOCK = registerBlock(
+            "rainforest_grass_block",
+            new RainforestGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK))
+    );
 
-    public static final Block BOG_GRASS_BLOCK = registerBlock("bog_grass_block",
-            new Block(AbstractBlock.Settings.create().strength(0.11f)
-                    .requiresTool().sounds(BlockSoundGroup.GRASS)));
+    public static final Block BOG_GRASS_BLOCK = registerBlock(
+            "bog_grass_block",
+            new BogGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK))
+    );
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
