@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "matchamod:block/rainforest_grass_block"
+      "model": "matchamod:block/bog_grass_block"
     }
   }
 }

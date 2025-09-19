@@ -24,6 +24,13 @@ public class ModBlocks {
             new BogGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK))
     );
 
+    public static final Block BOG_SOIL = Registry.register(
+            Registries.BLOCK,
+            Identifier.of("matchamod", "bog_soil"),
+            new BogSoil(FabricBlockSettings.copyOf(Blocks.DIRT))
+    );
+
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(MatchaMod.MOD_ID, name), block);

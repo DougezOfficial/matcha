@@ -20,6 +20,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.RAINFOREST_GRASS_BLOCK);
                         entries.add(ModBlocks.BOG_GRASS_BLOCK);
+                        entries.add(ModBlocks.BOG_SOIL.asItem());
 
                     }).build());
 
