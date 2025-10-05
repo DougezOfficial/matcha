@@ -3,13 +3,16 @@ package net.matchamod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.matchamod.MatchaMod;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.PumpkinBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -24,10 +27,14 @@ public class ModBlocks {
             new BogGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK))
     );
 
-    public static final Block BOG_SOIL = Registry.register(
-            Registries.BLOCK,
-            Identifier.of("matchamod", "bog_soil"),
-            new BogSoil(FabricBlockSettings.copyOf(Blocks.DIRT))
+    public static final  Block BOG_SOIL = registerBlock(
+            "bog_soil",
+            new BogSoilBlock(FabricBlockSettings.copyOf(Blocks.DIRT))
+    );
+
+    public static final  Block RAINFOREST_SOIL = registerBlock(
+            "rainforest_soil",
+            new BogSoilBlock(FabricBlockSettings.copyOf(Blocks.DIRT))
     );
 
 
@@ -46,7 +53,9 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(ModBlocks.RAINFOREST_GRASS_BLOCK);
+            entries.add(ModBlocks.RAINFOREST_SOIL);
             entries.add(ModBlocks.BOG_GRASS_BLOCK);
+            entries.add(ModBlocks.BOG_SOIL);
         });
     }
 }

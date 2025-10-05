@@ -19,8 +19,9 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.matchamod.matcha_mod_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.RAINFOREST_GRASS_BLOCK);
+                        entries.add(ModBlocks.RAINFOREST_SOIL);
                         entries.add(ModBlocks.BOG_GRASS_BLOCK);
-                        entries.add(ModBlocks.BOG_SOIL.asItem());
+                        entries.add(ModBlocks.BOG_SOIL);
 
                     }).build());
 
