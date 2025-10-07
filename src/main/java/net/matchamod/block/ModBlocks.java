@@ -27,6 +27,11 @@ public class ModBlocks {
             new BogGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK))
     );
 
+    public static final Block MOSSY_GRASS_BLOCK = registerBlock(
+            "mossy_grass_block",
+            new MossyGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK))
+    );
+
     public static final  Block BOG_SOIL = registerBlock(
             "bog_soil",
             new BogSoilBlock(FabricBlockSettings.copyOf(Blocks.DIRT))

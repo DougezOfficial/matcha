@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAINFOREST_SOIL);
                         entries.add(ModBlocks.BOG_GRASS_BLOCK);
                         entries.add(ModBlocks.BOG_SOIL);
+                        entries.add(ModBlocks.MOSSY_GRASS_BLOCK);
 
                     }).build());
 
