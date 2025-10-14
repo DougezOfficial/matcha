@@ -17,7 +17,7 @@ public class MossyGrassBlock extends GrassBlock {
         if (!world.isClient) {
 
             if (!canSurvive(state, world, pos)) {
-                world.setBlockState(pos, ModBlocks.BOG_SOIL.getDefaultState());
+                world.setBlockState(pos, ModBlocks.MOSSY_GROUND.getDefaultState());
             } else {
                 if (world.getLightLevel(pos.up()) >= 9) {
                     for (int i = 0; i < 4; ++i) {
@@ -28,7 +28,7 @@ public class MossyGrassBlock extends GrassBlock {
                         );
                         BlockState targetState = world.getBlockState(targetPos);
 
-                        if (targetState.isOf(ModBlocks.BOG_SOIL)
+                        if (targetState.isOf(ModBlocks.MOSSY_GROUND)
                                 && canSpread(state, world, targetPos)) {
                             world.setBlockState(targetPos, this.getDefaultState());
                         }

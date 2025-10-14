@@ -42,6 +42,10 @@ public class ModBlocks {
             new BogSoilBlock(FabricBlockSettings.copyOf(Blocks.DIRT))
     );
 
+    public static final Block MOSSY_GROUND = registerBlock(
+            "mossy_ground",
+            new MossyGroundBlock(FabricBlockSettings.copy(Blocks.DIRT)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
