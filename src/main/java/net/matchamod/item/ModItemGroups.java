@@ -36,6 +36,7 @@ public class ModItemGroups {
                         entries.add(ModItems.KRATOM_SEEDS);
                         entries.add(ModItems.BLOOD_HIBISCUS);
                         entries.add(ModItems.DRIED_BLOOD_HIBISCUS);
+                        entries.add(ModItems.ICE_TEA);
 
                     }).build());
 
