@@ -46,6 +46,10 @@ public class ModBlocks {
             "mossy_ground",
             new MossyGroundBlock(FabricBlockSettings.copy(Blocks.DIRT)));
 
+    public static final Block ICE_TEA = registerBlock(
+            "ice_tea",
+            new IceTea(FabricBlockSettings.copy(Blocks.BAMBOO).noCollision()));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -65,6 +69,10 @@ public class ModBlocks {
             entries.add(ModBlocks.RAINFOREST_SOIL);
             entries.add(ModBlocks.BOG_GRASS_BLOCK);
             entries.add(ModBlocks.BOG_SOIL);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(ModBlocks.ICE_TEA);
         });
     }
 }
