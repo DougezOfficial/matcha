@@ -32,7 +32,6 @@ public class IceTea extends Block {
         return SHAPE;
     }
 
-    // Small randomized offset like Bamboo
     @Override
     public float getOffsetX(BlockState state, BlockView world, BlockPos pos) {
         Random rand = Random.createLocal();
