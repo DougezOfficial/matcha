@@ -48,7 +48,7 @@ public class ModBlocks {
 
     public static final Block ICE_TEA = registerBlock(
             "ice_tea",
-            new IceTea(FabricBlockSettings.copy(Blocks.BAMBOO).noCollision()));
+            new MossyGroundBlock(FabricBlockSettings.copy(Blocks.BAMBOO)));
 
 
     private static Block registerBlock(String name, Block block) {

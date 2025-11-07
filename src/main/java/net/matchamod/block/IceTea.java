@@ -21,32 +21,12 @@ public class IceTea extends Block {
 
     public IceTea() {
         super(FabricBlockSettings.copyOf(Blocks.BAMBOO)
-                .noCollision() // can walk through
                 .breakInstantly()
                 .ticksRandomly()
                 .nonOpaque());
-    }
+    }}
 
-    @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, CollisionContext context) {
-        return SHAPE;
-    }
 
-    @Override
-    public float getOffsetX(BlockState state, BlockView world, BlockPos pos) {
-        Random rand = Random.createLocal();
-        return (rand.nextFloat() - 0.5f) * 0.2f;
-    }
 
-    @Override
-    public float getOffsetZ(BlockState state, BlockView world, BlockPos pos) {
-        Random rand = Random.createLocal();
-        return (rand.nextFloat() - 0.5f) * 0.2f;
-    }
-
-    @Override
-    public float getOffsetY(BlockState state, BlockView world, BlockPos pos) {
-        return 0f;
-    };
 
 
